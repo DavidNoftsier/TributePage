@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Psychotic Elephant Headline";
+    src: url(PsychoticElephantHeadline.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Psychotic Elephant";
+    src: url(PsychoticElephantText.ttf) format("truetype");
+}
+
+body{
+	background-color: #090909;
+	color: white;
+}
+
+header{
+	font-family:"Psychotic Elephant", serif;
+	text-align: center;
+}
+
+h1{
+	font-size: 10vw;
+}
+
+h2{
+	font-size: 5vw;
+}
+
+.main-pic{
+	display: block;
+	margin: auto;
+	width: 100%;
+}

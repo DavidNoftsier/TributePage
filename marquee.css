@@ -1,0 +1,50 @@
+.marquee-container{
+    position: relative;
+}
+
+.marquee {
+    
+	white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  	writing-mode: vertical-rl;
+	text-orientation: mixed;
+
+	margin: 0;
+    padding: 50px 1em;
+    line-height: 1.5em;
+    font: 1em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+    box-sizing: border-box;
+    animation: marquee 20s linear reverse infinite;
+
+	width: 25px;
+    position:absolute;
+    right:calc(-100vw + 100px);
+    bottom:0px;
+    color:#F2F2F2;
+}
+
+@keyframes marquee {
+    0%   { bottom:   0px }
+    100% { bottom: -500px }
+}
+
+@media screen and (max-width: 768px){
+	.marquee{
+		right:calc(-100vw + 75px);
+	}
+}
+
+@media screen and (max-width: 480px){
+	.marquee{
+		right:calc(-100vw + 50px);
+	}
+}
+
+.marquee span {
+	color:#F2F2F2;
+}
+
+.marquee span:hover {
+    animation-play-state: paused;
+}

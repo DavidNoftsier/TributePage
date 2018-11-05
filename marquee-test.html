@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hendrix Tribute</title>
+		<style>
+		.image-container{
+			position:relative;
+		}
+		.main-pic{
+			display: block;
+			margin: 15px auto;
+			width: 100%;
+		}
+
+		.marquee {
+		    
+			white-space: nowrap;
+		    overflow: hidden;
+		    box-sizing: border-box;
+		  	writing-mode: vertical-rl;
+			text-orientation: mixed;
+
+			margin: 0;
+		    padding: 50px 1em;
+		    line-height: 1.5em;
+		    font: 1em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+		    box-sizing: border-box;
+		    animation: marquee 20s linear reverse infinite;
+
+			width: 25px;
+		    position:absolute;
+		    right:calc(-100vw + 100px);
+		    bottom:0px;
+		    color:white;
+		}
+
+		@media screen and (max-width: 768px){
+			.marquee{
+				right:calc(-100vw + 75px);
+			}
+		}
+
+		@media screen and (max-width: 480px){
+			.marquee{
+				right:calc(-100vw + 50px);
+			}
+		}
+
+		.marquee span {
+			color:white;
+		/*    display: inline-block;
+		    position:relative;
+		    right:0px;
+		    bottom:0px;*/
+		}
+
+		.marquee span:hover {
+		    animation-play-state: paused;
+		}
+
+
+		/* Make it move! */
+		@keyframes marquee {
+		    0%   { bottom:   0px }
+		    100% { bottom: -500px }
+		}
+
+		</style>
+	</head>
+	<body>
+
+		<main>
+			<span class="image-container">
+				<img class='main-pic' src='hendrix-main-pic.jpg' alt="Photograph of Hendrix performing live"/>
+				<span class="marquee">
+					<span id="marquee-text-1">
+						Stilton queso paneer. Swiss cheese strings monterey jack cut the cheese ricotta roquefort emmental cut the cheese. Camembert de normandie caerphilly cow macaroni cheese mascarpone cheesecake say cheese edam. Babybel rubber cheese ricotta camembert de normandie fondue monterey jack feta babybel. Paneer cottage cheese cheeseburger halloumi.
+					</span>
+				</span>	
+			</span>
+		</main>
+	</body>
+</html>

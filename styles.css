@@ -18,16 +18,56 @@ header{
 	text-align: center;
 }
 
-h1{
-	font-size: 10vw;
+footer{
+	text-align:center;
+	color: #F2F2F2;
 }
 
-h2{
+.footer-link{
+	text-decoration: none;
+}
+
+.primary-header{
+	font-size: 10vw;
+	color: #F2F2F2;
+}
+
+.secondary-header{
 	font-size: 5vw;
+	color: #F2F2F2;
 }
 
 .main-pic{
 	display: block;
 	margin: auto;
 	width: 100%;
+}
+
+.bio{
+	display:flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.bio-card{
+	min-height:250px;
+	max-height:250px;
+	min-width:300px;
+	max-width:300px;
+	background-color:#F2F2F2;
+	color:black;
+	border:double 8px black;
+	border-radius: 10px;
+	margin:15px 20px;
+}
+
+.bio-card-header{
+	font-size:2vw;
+	margin:10px;
+}
+
+.bio-card-body{
+	font-size:1vw;
+	margin:10px;
 }

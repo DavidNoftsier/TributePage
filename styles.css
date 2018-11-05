@@ -62,6 +62,10 @@ footer{
 	margin:15px 20px;
 }
 
+.bio-card hr{
+	margin:0px 10px;
+}
+
 .bio-card-header{
 	font-size:2vw;
 	margin:10px;

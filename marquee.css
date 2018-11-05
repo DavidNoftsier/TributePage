@@ -1,5 +1,6 @@
 .marquee-container{
     position: relative;
+    overflow-y:hidden;
 }
 
 .marquee {
@@ -19,7 +20,7 @@
 
 	width: 25px;
     position:absolute;
-    right:calc(-100vw + 100px);
+    right:100px;
     bottom:0px;
     color:#F2F2F2;
 }
@@ -31,13 +32,13 @@
 
 @media screen and (max-width: 768px){
 	.marquee{
-		right:calc(-100vw + 75px);
+		right:50px;
 	}
 }
 
 @media screen and (max-width: 480px){
 	.marquee{
-		right:calc(-100vw + 50px);
+		right:25px;
 	}
 }
 
